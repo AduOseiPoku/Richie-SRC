@@ -1,0 +1,43 @@
+.src {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  min-width: 300px;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  color: black;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: box-shadow 0.3s cubic-bezier(.4,0,.2,1), transform 0.3s cubic-bezier(.4,0,.2,1);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.src:hover {
+  box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.45);
+  transform: translateY(-4px) scale(1.03);
+}
+/* Responsive styles for .src */
+@media (max-width: 900px) {
+  .src {
+    min-width: 220px;
+    min-height: 220px;
+    padding: 2rem 1.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .src {
+    min-width: 120px;
+    min-height: 120px;
+    padding: 1.2rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+  }
+}
